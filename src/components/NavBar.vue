@@ -1,8 +1,6 @@
 <template>
   <div class="app-container">
-    <!-- Header Container -->
-    <!-- <div class="header-container"></div> -->
-
+    
     <!-- Navigation Container -->
     <div class="nav-container">
       <!-- Logo -->
@@ -13,19 +11,19 @@
       <!-- Links Container -->
       <div class="links-container">
        <!-- Patients' Access -->
-       <div class="nav-item" :class="{ 'nav-hover': isHovered === 'Patients' }" @mouseover="handleMouseOver('Patients')" @mouseout="handleMouseOut">
-          <div class="nav-title">Patients’ Access</div>
+       <div class="nav-item">
+          <a class="nav-title">Patients’ Access</a>
         </div>
 
         <!-- Doctors' Access and Blogs -->
         <div class="nav-group">
           <!-- Doctors' Access -->
-          <div class="nav-item" :class="{ 'nav-hover': isHovered === 'Doctors' }" @mouseover="handleMouseOver('Doctors')" @mouseout="handleMouseOut">
+          <div class="nav-item">
             <div class="nav-title">Doctors’ Access</div>
           </div>
 
           <!-- Blogs -->
-          <div class="nav-item" :class="{ 'nav-hover': isHovered === 'Blogs' }" @mouseover="handleMouseOver('Blogs')" @mouseout="handleMouseOut">
+          <div class="nav-item" >
             <div class="nav-title">Blogs</div>
           </div>
 
@@ -76,23 +74,11 @@ export default {
           top: "3.10px",
           background: "#01B7C4",
         },
-        // Add more elements as needed
       ],
       selectedLanguage: 'en',
-      isHovered: null,
     };
   },
-  methods: {
-    handleChange() {
-      // Handle language change if needed
-    },
-    handleMouseOver(item) {
-      this.isHovered = item;
-    },
-    handleMouseOut() {
-      this.isHovered = null;
-    },
-  },
+  
 };
 </script>
 
@@ -101,11 +87,6 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
-}
-
-.header-container {
-  width: 100%;
-  height: 100px;
 }
 
 .nav-container {
@@ -141,8 +122,10 @@ export default {
   transition: border-bottom 0.3s ease-in-out;
 }
 
-.nav-item.nav-hover {
+.nav-title:hover{
+  color: #01B7C4;
   border-bottom: 1px #01B7C4 solid;
+
 }
 
 .nav-group {
@@ -153,7 +136,7 @@ export default {
 }
 
 .nav-title {
-  color: #01b7c4;
+  color: #000000;
   font-size: 16px;
   font-family: Raleway;
   font-weight: 600;
@@ -175,7 +158,6 @@ export default {
   font-family: Raleway;
   color: #303532;
   background-color: #F8F8F8;
-  /* Set the background color for the entire page */
 }
 
 .custom-design-container {
