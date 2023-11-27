@@ -29,9 +29,16 @@
     font-size: 14px;
     font-family: sans-serif;
     word-wrap: break-word;
-    width: 30%;
-  }
-  .rounded-button {
+    width: 30%; /* Adjusted width for smaller screens */
+
+    /* Additional styles for smaller screens */
+    @media (max-width: 600px) {
+        width: 30%; /* Set to 100% to take the full width on small screens */
+        margin-right: 0; /* Remove right margin on small screens if needed */
+    }
+}
+
+.rounded-button {
     background-color: #01b7c4;
     color: #ffffff;
     border: none;
@@ -39,7 +46,14 @@
     padding: 15px 40px;
     font-size: 16px;
     cursor: pointer;
-  }
+    
+    /* Additional styles for smaller screens */
+    @media (max-width: 600px) {
+        width: 30%; /* Set to 100% to take the full width on small screens */
+        margin-top: 10px; /* Add some top margin for spacing on small screens */
+    }
+}
+
   .main-heading {
     color: #303532;
     font-size: 54px;
@@ -156,6 +170,7 @@
     background: white;
     border-radius: 15px;
     margin-bottom: 20px;
+    margin-top: 5%;
     position: relative; /* Adjusted position */
     z-index: 1; /* Set z-index to be above the background image */
   }
