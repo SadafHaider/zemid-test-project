@@ -131,14 +131,14 @@ export default {
 .nav-group {
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 24px;
+  gap: 10px;
   display: flex;
 }
 
 .nav-title {
-  color: #000000;
+  color: #303532;
   font-size: 16px;
-  font-family: Raleway;
+  font-family: sans-serif;
   font-weight: 600;
   word-wrap: break-word;
 }
@@ -155,7 +155,8 @@ export default {
   padding: 8px;
   /* Padding inside the select */
   font-size: 16px;
-  font-family: Raleway;
+  font-weight: 600;
+  font-family: sans-serif;
   color: #303532;
   background-color: #F8F8F8;
 }
@@ -178,6 +179,12 @@ export default {
     align-items: flex-start;
   }
 
+  .nav-group {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: flex;
+}
   .logo-container {
     margin-bottom: 10px;
     margin-right: 0; /* Remove right margin for better spacing */
