@@ -23,4 +23,5 @@ export default {
 </script>
 
 <style src="./assets/styles/styles.css">
+
 </style>

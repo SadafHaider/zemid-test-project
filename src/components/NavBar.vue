@@ -89,10 +89,11 @@ export default {
   position: relative;
 }
 
+
 .nav-container {
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -177,6 +178,7 @@ export default {
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0px;
   }
 
   .nav-group {

@@ -1,5 +1,6 @@
 body {
   background-color: #F8F8F8; /* Set the background color for the entire page */
+  margin: 0px;
 }
 
 .big-logo-container {
@@ -138,7 +139,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 80px;
+    padding: 50px 80px;
   }
   
   .gradient-background {
@@ -599,7 +600,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 80px;
+    padding: 0px 80px;
   }
 
   .gradient-background {
