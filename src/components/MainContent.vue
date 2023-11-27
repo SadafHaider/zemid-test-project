@@ -125,7 +125,7 @@
     <div class="text-container">
         <div class="main-heading" style="text-align: left">Storing Zimed® PF</div>
 
-        <div class="description-text">
+        <div class="description-text mt">
             Before putting the cap back on, shake the bottle once in a downwards
             direction, without touching the dropper tip. This is to remove any
             liquid on the tip. To avoid infections and eye injury, do not let the

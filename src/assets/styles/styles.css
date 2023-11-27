@@ -60,7 +60,7 @@
   
   .grid-item {
     /* background-color: #01B7C4; */
-    color: 000000;
+    /* color: #000000; */
     /* padding: 20px; */
     text-align: center;
     border-radius: 10px;
@@ -151,8 +151,8 @@
   }
   
   .custom-box {
-    width: 613px;
-    height: 140px;
+    width: 54%;
+    height: auto;
     background: white;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -598,8 +598,8 @@
   }
 
   .custom-box {
-    width: 613px;
-    height: 140px;
+    width: 54%;
+    height: auto;
     background: white;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -609,7 +609,7 @@
   }
 
   .custom-text {
-    width: 483px;
+    width: 90%;
     color: #939393;
     font-size: 24px;
     font-family: sans-serif;
