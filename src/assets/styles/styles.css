@@ -27,7 +27,7 @@
     font-size: 16px;
     color: #939393;
     font-size: 14px;
-    font-family: Open Sans;
+    font-family: sans-serif;
     word-wrap: break-word;
     width: 30%;
   }
@@ -43,7 +43,7 @@
   .main-heading {
     color: #303532;
     font-size: 54px;
-    font-family: "Open Sans", sans-serif;
+    font-family: sans-serif;
     font-weight: 800;
     word-wrap: break-word;
     margin-top: 50px;
@@ -222,7 +222,7 @@
     width: 100%;
     color: #303532;
     font-size: 22px;
-    font-family: Raleway;
+    font-family: sans-serif;
     font-weight: 500;
     line-height: 33px;
     word-wrap: break-word;
@@ -250,7 +250,7 @@
   
   .information-container {
     flex: 1;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -682,7 +682,7 @@
 
   .information-container {
     flex: 1;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
