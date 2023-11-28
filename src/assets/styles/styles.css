@@ -579,9 +579,11 @@ body {
   
   @media (min-width: 1024px) {
     .grid-container {
-      grid-template-columns: repeat(3, 1fr); /* Three columns for screens wider than 1024px */
+      grid-template-columns: repeat(3, 1fr); 
     }
+    
   }
+
 
   @media (max-width: 600px) {
     .grid-container {
@@ -600,7 +602,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
   }
 
   .gradient-background {
@@ -932,10 +934,7 @@ body {
 }
 /* Larger screens */
 @media (min-width: 768px) {
-  .footer-container {
-    padding: 50px 80px; /* Adjust padding for larger screens */
-  }
-
+  
   .row {
     padding: 10px;
     margin: 5px;
