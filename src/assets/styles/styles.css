@@ -14,31 +14,44 @@ body {
     max-width: 100%; /* Make sure the image doesn't exceed its natural size */
     height: auto; /* Maintain the aspect ratio */
   }
-  
+  .mainContainer{
+    padding: 0 50px;
+
+  }
   .centered-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
-  
-  .rounded-input {
-    border: 1px solid #ffffff;
-    background: white;
-    border-radius: 100px;
-    padding: 15px;
-    margin-right: 10px;
-    font-size: 16px;
-    color: #939393;
-    font-size: 14px;
-    font-family: sans-serif;
-    word-wrap: break-word;
-    width: 30%; /* Adjusted width for smaller screens */
 
-    /* Additional styles for smaller screens */
-    @media (max-width: 600px) {
-        width: 30%; /* Set to 100% to take the full width on small screens */
+    .rounded-input 
+  {
+      border: 1px solid #ffffff;
+      margin-right: 26px;
+      max-width: 612px;
+      border-radius: 100px;
+      padding: 15px;
+      margin-right: 10px;
+      font-weight: 600;
+      color: #939393;
+      font-size: 24px;
+      font-family: Open Sans, sans-serif;
+      padding: 20px 40px;
+      word-wrap: break-word;
+      /* padding: 20 40px; */
+      width: 50%; /* Adjusted width for smaller screens */
+      transition: border-color 0.3s ease-in-out; /* Add transition for smooth effect */
+  
+      &:focus {
+        border: 2px solid #01b7c4; /* Change the border color when focused */
+        outline: none; /* Remove the default focus outline */
+      }
+    }
+      /* Additional styles for smaller screens */
+    @media (max-width: 767px) {
+      .rounded-input{
+        width: 100%; /* Set to 100% to take the full width on small screens */
         margin-right: 0; /* Remove right margin on small screens if needed */
     }
 }
@@ -48,17 +61,27 @@ body {
   flex: 1;
   }
 .rounded-button {
-    background-color: #01b7c4;
-    color: #ffffff;
-    border: none;
-    border-radius: 100px;
-    padding: 15px 40px;
-    font-size: 16px;
-    cursor: pointer;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  min-width: 233px;
+  min-height: 70px;
+  padding: 5px;
+  border-radius: 100px;
+  box-shadow: none!important;
+  color: #fff;
+  background: #01b7c4;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0;
+  border: 1px solid #01b7c4;
+  transition: all .3s linear;
     
     /* Additional styles for smaller screens */
-    @media (max-width: 600px) {
-        width: 30%; /* Set to 100% to take the full width on small screens */
+    @media (max-width: 767px) {
+        width: 100%; /* Set to 100% to take the full width on small screens */
         margin-top: 10px; /* Add some top margin for spacing on small screens */
     }
 }
@@ -66,7 +89,7 @@ body {
   .main-heading {
     color: #303532;
     font-size: 54px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 800;
     word-wrap: break-word;
     margin-top: 50px;
@@ -86,23 +109,32 @@ body {
     /* color: #000000; */
     /* padding: 20px; */
     text-align: center;
+    justify-items: center;
     border-radius: 10px;
+
+    /* Hover effect */
+    &:hover {
+      background-color: #FFFFFF; /* Change the background color on hover */
+      cursor: pointer;
+    }
+
+    
   }
   
   .step-heading {
     color: #303532;
     font-size: 24px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 600;
     word-wrap: break-word;
   }
   
   .step-description {
-    width: 353px;
+    width: 90%;
     text-align: center;
-    color: #303532;
-    font-size: 17px;
-    font-family: sans-serif;
+    color: #939393;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
     font-weight: 500;
     line-height: 25.5px;
     word-wrap: break-word;
@@ -150,7 +182,7 @@ body {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    padding: 30px;
+    padding: 37px 41px;
   }
   
   .content-image {
@@ -179,7 +211,7 @@ body {
     background: white;
     border-radius: 15px;
     margin-bottom: 20px;
-    margin-top: 5%;
+    margin-top: 2%;
     position: relative; /* Adjusted position */
     z-index: 1; /* Set z-index to be above the background image */
   }
@@ -210,10 +242,11 @@ body {
     width: 483px;
     color: #939393;
     font-size: 24px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 300;
     word-wrap: break-word;
-    padding: 30px;
+    padding: 30px 35px;
+    
   }
 
   .white-background-section {
@@ -246,7 +279,7 @@ body {
     width: 100%;
     color: #303532;
     font-size: 22px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 500;
     line-height: 33px;
     word-wrap: break-word;
@@ -285,7 +318,7 @@ body {
   .information-text {
     color: #303532;
     font-size: 40px;
-    font-family:sans-serif;
+    font-family:Open Sans, sans-serif;
     font-weight: 700;
     line-height: 58.16px;
     word-wrap: break-word;
@@ -306,7 +339,7 @@ body {
   .second-heading{
     color: #303532;
     font-size: 40px;
-    font-family:sans-serif;
+    font-family:Open Sans, sans-serif;
     font-weight: 700;
     word-wrap: break-word;
     text-align: center;
@@ -316,7 +349,7 @@ body {
     width: 160px; 
     color: white; 
     font-size: 20px; 
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     /* padding: 20px;  */
     font-weight: 700; 
     line-height: 30px; 
@@ -359,7 +392,7 @@ body {
     width: 343px; 
     color: #303532; 
     font-size: 20px; 
-    font-family: sans-serif; 
+    font-family: Open Sans, sans-serif; 
     font-weight: 600; 
     word-wrap: break-word; 
     padding: 20px 0 20px; 
@@ -431,7 +464,7 @@ body {
 .heading-text {
     color: #303532;
     font-size: 48px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 800;
     word-wrap: break-word;
 }
@@ -439,7 +472,7 @@ body {
 .heading-footer {
     color: #FFFFFF;
     font-size: 36px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 800;
     word-wrap: break-word;
 }
@@ -448,7 +481,7 @@ body {
     width: 160px;
     color: white;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 400;
     line-height: 26px;
     word-wrap: break-word;
@@ -458,7 +491,7 @@ body {
     /* width: 350px; */
     color: white;
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word;
@@ -515,7 +548,7 @@ body {
   width: 160px; 
   color: white; 
   font-size: 16px; 
-  font-family:sans-serif; 
+  font-family:Open Sans, sans-serif; 
   font-weight: 400; 
   line-height: 26px; 
   word-wrap: break-word;
@@ -574,6 +607,7 @@ body {
     color: #000000;
     text-align: center;
     border-radius: 10px;
+    background-color: #FFFFFF;
   }
 }
   
@@ -608,7 +642,7 @@ body {
   .gradient-background {
     width: 100%;
     height: 534px;
-    background: url("/public/images/iStock1.png") center/cover no-repeat;
+    /* background: url("/public/images/iStock1.png") center/cover no-repeat; */
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -616,23 +650,39 @@ body {
   }
 
   .custom-box {
+    display: flex;
     width: 54%;
     height: auto;
     background: white;
     border-radius: 15px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     position: relative;
     z-index: 1;
+    min-height: 140px;
+    transition: all .3s linear;
+
+    
+    /* Hover effect */
+    &:hover {
+      background-color: #00bdb6; /* Change the background color on hover */
+    }
   }
 
   .custom-text {
     width: 90%;
     color: #939393;
     font-size: 24px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 300;
     word-wrap: break-word;
-    padding: 30px;
+    padding: 30px 35px;
+    
+
+    /* Hover effect */
+    &:hover {
+      color: #ffffff; /* Change the background color on hover */
+      cursor: pointer;
+  }
   }
 }
 
@@ -652,13 +702,21 @@ body {
   }
 
   .gradient-background {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    background: url("/public/images/iStock1.png") center/cover no-repeat;
+    /* background: url("/public/images/iStock1.png") center/cover no-repeat; */
     border-radius: 20px;
     position: relative;
     overflow: hidden;
     padding: 10px;
+  }
+
+  .box-effect{
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
 
   .custom-box {
@@ -666,7 +724,7 @@ body {
     height: auto;
     background: white;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     position: relative;
     z-index: 1;
   }
@@ -675,7 +733,7 @@ body {
     width: 100%;
     color: #939393;
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 300;
     word-wrap: break-word;
     padding: 10px;
@@ -856,9 +914,11 @@ body {
 /* Larger screens */
 @media (min-width: 768px) {
   .step-description {
-    width: 353px;
+    width: 90%;
+    color: #939393;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 25.5px;
     padding: 20px;
   }
@@ -867,7 +927,9 @@ body {
 /* Medium screens */
 @media (max-width: 767px) {
   .step-description {
-    /* width: 100%;  */
+    width: 90%; 
+    color: #939393;
+    font-weight: 500;
     text-align: center;
     font-size: 16px; /* Adjust the font size for smaller screens */
     line-height: 24px; /* Adjust the line height for smaller screens */
@@ -906,6 +968,12 @@ body {
 
 /* Medium screens */
 @media (max-width: 767px) {
+  .centered-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 50px; */
+  }
   .head {
     text-align: center;
     padding: 15px; /* Adjust padding for medium screens */
